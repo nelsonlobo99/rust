@@ -54,7 +54,7 @@ or reading the [rustc guide][rustcguidebuild].
 
     It is recommended that if you plan to use the Rust build system to create
     an installation (using `./x.py install`) that you set the `prefix` value
-    in the `[install]` section to a directory that you have write permissions.
+    in the `[Install]` section to a directory that you have to write permissions.
 
 4. Build and install:
 
@@ -196,7 +196,7 @@ the ABI used. I.e., if the ABI was `x86_64-pc-windows-msvc`, the directory will 
 Since the Rust compiler is written in Rust, it must be built by a
 precompiled "snapshot" version of itself (made in an earlier stage of
 development). As such, source builds require a connection to the Internet, to
-fetch snapshots, and an OS that can execute the available snapshot binaries.
+fetch snapshots and an OS that can execute the available snapshot binaries.
 
 Snapshot binaries are currently built and tested on several platforms:
 
